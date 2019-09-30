@@ -29,7 +29,7 @@ payg_ilumexico.bootloader.file=mkrfox1200/samd21_sam_ba_arduino_mkrfox1200.bin
 
 # PAYG Ilumexico rev E1
 # --------------------
-payg_ilumexico_e1.name=PAYG Ilumexico rev E1
+payg_ilumexico_e1.name=PAYG Ilumexico (rev E1)
 payg_ilumexico_e1.vid.0=0x2341
 payg_ilumexico_e1.pid.0=0x8050
 payg_ilumexico_e1.vid.1=0x2341
@@ -43,7 +43,7 @@ payg_ilumexico_e1.upload.wait_for_upload_port=true
 payg_ilumexico_e1.upload.native_usb=true
 payg_ilumexico_e1.build.mcu=cortex-m0plus
 payg_ilumexico_e1.build.f_cpu=48000000L
-payg_ilumexico_e1.build.usb_product="PAYG Ilumexico rev E1"
+payg_ilumexico_e1.build.usb_product="PAYG Ilumexico"
 payg_ilumexico_e1.build.usb_manufacturer="Ilumexico"
 payg_ilumexico_e1.build.board=SAMD_PAYG_ILUMEXICO_E1
 payg_ilumexico_e1.build.core=arduino
@@ -56,10 +56,39 @@ payg_ilumexico_e1.build.pid=0x8050
 payg_ilumexico_e1.bootloader.tool=openocd
 payg_ilumexico_e1.bootloader.file=mkrfox1200/samd21_sam_ba_arduino_mkrfox1200.bin
 
+# PAYG Ilumexico rev E3
+# --------------------
+payg_ilumexico_e3.name=PAYG Ilumexico (rev E3)
+payg_ilumexico_e3.vid.0=0x2341
+payg_ilumexico_e3.pid.0=0x8050
+payg_ilumexico_e3.vid.1=0x2341
+payg_ilumexico_e3.pid.1=0x0050
+
+payg_ilumexico_e3.upload.tool=bossac
+payg_ilumexico_e3.upload.protocol=sam-ba
+payg_ilumexico_e3.upload.maximum_size=262144
+payg_ilumexico_e3.upload.use_1200bps_touch=true
+payg_ilumexico_e3.upload.wait_for_upload_port=true
+payg_ilumexico_e3.upload.native_usb=true
+payg_ilumexico_e3.build.mcu=cortex-m0plus
+payg_ilumexico_e3.build.f_cpu=48000000L
+payg_ilumexico_e3.build.usb_product="PAYG Ilumexico"
+payg_ilumexico_e3.build.usb_manufacturer="Ilumexico"
+payg_ilumexico_e3.build.board=SAMD_PAYG_ILUMEXICO_E3
+payg_ilumexico_e3.build.core=arduino
+payg_ilumexico_e3.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DVERY_LOW_POWER
+payg_ilumexico_e3.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+payg_ilumexico_e3.build.openocdscript=openocd_scripts/arduino_zero.cfg
+payg_ilumexico_e3.build.variant=payg_ilumexico_e3
+payg_ilumexico_e3.build.vid=0x2341
+payg_ilumexico_e3.build.pid=0x8050
+payg_ilumexico_e3.bootloader.tool=openocd
+payg_ilumexico_e3.bootloader.file=mkrfox1200/samd21_sam_ba_arduino_mkrfox1200.bin
+
 
 # PAYG Ilumexico rev F4
 # --------------------
-payg_ilumexico_f4.name=PAYG Ilumexico rev F4
+payg_ilumexico_f4.name=PAYG Ilumexico (rev F4)
 payg_ilumexico_f4.vid.0=0x2341
 payg_ilumexico_f4.pid.0=0x8050
 payg_ilumexico_f4.vid.1=0x2341
@@ -73,7 +102,7 @@ payg_ilumexico_f4.upload.wait_for_upload_port=true
 payg_ilumexico_f4.upload.native_usb=true
 payg_ilumexico_f4.build.mcu=cortex-m0plus
 payg_ilumexico_f4.build.f_cpu=48000000L
-payg_ilumexico_f4.build.usb_product="PAYG Ilumexico rev F4"
+payg_ilumexico_f4.build.usb_product="PAYG Ilumexico"
 payg_ilumexico_f4.build.usb_manufacturer="Ilumexico"
 payg_ilumexico_f4.build.board=SAMD_PAYG_ILUMEXICO_F4
 payg_ilumexico_f4.build.core=arduino
