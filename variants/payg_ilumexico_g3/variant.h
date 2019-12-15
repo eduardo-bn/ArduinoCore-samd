@@ -132,6 +132,16 @@ extern Uart SigFoxSerial;
 #define PAD_SIGFOX_RX   (SERCOM_RX_PAD_3)
 #define SIGFOX_SERIAL   (SigFoxSerial)
 
+// RS485Serial
+extern Uart RS485Serial;
+#define RS485_RE_PIN    (2u)
+#define RS485_DE_PIN    (3u)
+#define RS485_TXD_PIN   (4u)
+#define RS485_RXD_PIN   (5u)
+#define PAD_RS485_TX    (UART_TX_PAD_2)
+#define PAD_RS485_RX    (SERCOM_RX_PAD_3)
+#define RS485_SERIAL    (RS485Serial)
+
 // AngazaSerial
 extern Uart AngazaSerial;
 #define UART_RXD_PIN    (13u)
