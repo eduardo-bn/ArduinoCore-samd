@@ -148,6 +148,10 @@ extern Uart AngazaSerial;
 #define UART_TXD_PIN    (14u)
 #define PAD_ANGAZA_TX   (UART_TX_PAD_2)
 #define PAD_ANGAZA_RX   (SERCOM_RX_PAD_3)
+
+// Battery Voltage Parameters
+#define BATTERY_12V
+
 #endif // __cplusplus
 
 #ifdef __cplusplus

@@ -21,7 +21,7 @@ payg_ilumexico.build.core=arduino
 payg_ilumexico.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DVERY_LOW_POWER
 payg_ilumexico.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
 payg_ilumexico.build.openocdscript=openocd_scripts/arduino_zero.cfg
-payg_ilumexico.build.variant=payg_ilumexico_g3
+payg_ilumexico.build.variant=payg_ilumexico_g3_24V
 payg_ilumexico.build.vid=0x2341
 payg_ilumexico.build.pid=0x8050
 payg_ilumexico.bootloader.tool=openocd
@@ -115,31 +115,60 @@ payg_ilumexico_f4.build.pid=0x8050
 payg_ilumexico_f4.bootloader.tool=openocd
 payg_ilumexico_f4.bootloader.file=mkrfox1200/samd21_sam_ba_arduino_mkrfox1200.bin
 
-# PAYG Ilumexico rev G3
+# PAYG Ilumexico rev G3 12V
 # --------------------
-payg_ilumexico_g3.name=PAYG Ilumexico (rev G3)
-payg_ilumexico_g3.vid.0=0x2341
-payg_ilumexico_g3.pid.0=0x8050
-payg_ilumexico_g3.vid.1=0x2341
-payg_ilumexico_g3.pid.1=0x0050
+payg_ilumexico_g3_12V.name=PAYG Ilumexico (rev G3 12V)
+payg_ilumexico_g3_12V.vid.0=0x2341
+payg_ilumexico_g3_12V.pid.0=0x8050
+payg_ilumexico_g3_12V.vid.1=0x2341
+payg_ilumexico_g3_12V.pid.1=0x0050
 
-payg_ilumexico_g3.upload.tool=bossac
-payg_ilumexico_g3.upload.protocol=sam-ba
-payg_ilumexico_g3.upload.maximum_size=262144
-payg_ilumexico_g3.upload.use_1200bps_touch=true
-payg_ilumexico_g3.upload.wait_for_upload_port=true
-payg_ilumexico_g3.upload.native_usb=true
-payg_ilumexico_g3.build.mcu=cortex-m0plus
-payg_ilumexico_g3.build.f_cpu=48000000L
-payg_ilumexico_g3.build.usb_product="PAYG Ilumexico"
-payg_ilumexico_g3.build.usb_manufacturer="Ilumexico"
-payg_ilumexico_g3.build.board=SAMD_PAYG_ILUMEXICO_G3
-payg_ilumexico_g3.build.core=arduino
-payg_ilumexico_g3.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DVERY_LOW_POWER
-payg_ilumexico_g3.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
-payg_ilumexico_g3.build.openocdscript=openocd_scripts/arduino_zero.cfg
-payg_ilumexico_g3.build.variant=payg_ilumexico_g3
-payg_ilumexico_g3.build.vid=0x2341
-payg_ilumexico_g3.build.pid=0x8050
-payg_ilumexico_g3.bootloader.tool=openocd
-payg_ilumexico_g3.bootloader.file=mkrfox1200/samd21_sam_ba_arduino_mkrfox1200.bin
+payg_ilumexico_g3_12V.upload.tool=bossac
+payg_ilumexico_g3_12V.upload.protocol=sam-ba
+payg_ilumexico_g3_12V.upload.maximum_size=262144
+payg_ilumexico_g3_12V.upload.use_1200bps_touch=true
+payg_ilumexico_g3_12V.upload.wait_for_upload_port=true
+payg_ilumexico_g3_12V.upload.native_usb=true
+payg_ilumexico_g3_12V.build.mcu=cortex-m0plus
+payg_ilumexico_g3_12V.build.f_cpu=48000000L
+payg_ilumexico_g3_12V.build.usb_product="PAYG Ilumexico"
+payg_ilumexico_g3_12V.build.usb_manufacturer="Ilumexico"
+payg_ilumexico_g3_12V.build.board=SAMD_PAYG_ILUMEXICO_G3
+payg_ilumexico_g3_12V.build.core=arduino
+payg_ilumexico_g3_12V.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DVERY_LOW_POWER
+payg_ilumexico_g3_12V.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+payg_ilumexico_g3_12V.build.openocdscript=openocd_scripts/arduino_zero.cfg
+payg_ilumexico_g3_12V.build.variant=payg_ilumexico_g3_12V
+payg_ilumexico_g3_12V.build.vid=0x2341
+payg_ilumexico_g3_12V.build.pid=0x8050
+payg_ilumexico_g3_12V.bootloader.tool=openocd
+payg_ilumexico_g3_12V.bootloader.file=mkrfox1200/samd21_sam_ba_arduino_mkrfox1200.bin
+
+# PAYG Ilumexico rev G3 24V
+# --------------------
+payg_ilumexico_g3_24V.name=PAYG Ilumexico (rev G3 24V)
+payg_ilumexico_g3_24V.vid.0=0x2341
+payg_ilumexico_g3_24V.pid.0=0x8050
+payg_ilumexico_g3_24V.vid.1=0x2341
+payg_ilumexico_g3_24V.pid.1=0x0050
+
+payg_ilumexico_g3_24V.upload.tool=bossac
+payg_ilumexico_g3_24V.upload.protocol=sam-ba
+payg_ilumexico_g3_24V.upload.maximum_size=262144
+payg_ilumexico_g3_24V.upload.use_1200bps_touch=true
+payg_ilumexico_g3_24V.upload.wait_for_upload_port=true
+payg_ilumexico_g3_24V.upload.native_usb=true
+payg_ilumexico_g3_24V.build.mcu=cortex-m0plus
+payg_ilumexico_g3_24V.build.f_cpu=48000000L
+payg_ilumexico_g3_24V.build.usb_product="PAYG Ilumexico"
+payg_ilumexico_g3_24V.build.usb_manufacturer="Ilumexico"
+payg_ilumexico_g3_24V.build.board=SAMD_payg_ilumexico_g3_24V
+payg_ilumexico_g3_24V.build.core=arduino
+payg_ilumexico_g3_24V.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags} -DVERY_LOW_POWER
+payg_ilumexico_g3_24V.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+payg_ilumexico_g3_24V.build.openocdscript=openocd_scripts/arduino_zero.cfg
+payg_ilumexico_g3_24V.build.variant=payg_ilumexico_g3_24V
+payg_ilumexico_g3_24V.build.vid=0x2341
+payg_ilumexico_g3_24V.build.pid=0x8050
+payg_ilumexico_g3_24V.bootloader.tool=openocd
+payg_ilumexico_g3_24V.bootloader.file=mkrfox1200/samd21_sam_ba_arduino_mkrfox1200.bin

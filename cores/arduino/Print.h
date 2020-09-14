@@ -70,7 +70,7 @@ class Print
     size_t print(unsigned int, int = DEC);
     size_t print(long, int = DEC);
     size_t print(unsigned long, int = DEC);
-    size_t print(double, int = 7);
+    size_t print(double, int = 2);
     size_t print(const Printable&);
 
     size_t println(const __FlashStringHelper *);
